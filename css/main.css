@@ -1,0 +1,179 @@
+@import "./reset.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
+
+/* 
+font-family: 'Rubik', sans-serif;
+*/
+
+html,
+body {
+	display: flex;
+	flex-direction: column;
+	min-width: 100%;
+	min-height: 100%;
+	font-family: 'Rubik', sans-serif;
+	overflow-x: hidden;
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+	background-color: #F9FAFF;
+}
+
+/* body::-webkit-scrollbar {
+  display: none;
+} */
+
+/* General */
+
+.container {
+	margin: 0 auto;
+	padding: 0 20px;
+	max-width: 1211px;
+}
+
+.none {
+	display: none !important;
+}
+
+/* Nav */
+
+.nav {
+	padding-top: 54.36px;
+	color: #363853;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.nav-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	row-gap: 10px;
+	flex-wrap: wrap;
+}
+
+.nav-menu {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	column-gap: 45px;
+	row-gap: 10px;
+}
+
+.nav-link {
+	color: #313131;
+	transition: opacity 0.15s ease-in;
+}
+
+.nav-link:hover {
+	opacity: 0.75;
+}
+
+.nav-link__button>a {
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 120px;
+	height: 50.408px;
+	flex-shrink: 0;
+	border-radius: 5px;
+	background: var(--Secondary, #FF7A50);
+	box-shadow: 0px 22px 40px 0px rgba(255, 104, 56, 0.19);
+}
+
+/* Header */
+
+.columns-header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.header-left {
+	max-width: 530px;
+	
+}
+
+.header-title {
+	color: #363853;
+	font-size: 66px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: normal;
+	text-transform: capitalize;
+}
+
+.header-title>span {
+	color: #FF7A50;
+}
+
+.header-text {
+	color: #363853;
+	font-family: Rubik;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	padding-top: 23px;
+	padding-bottom: 44.78px;
+	/* 150% */
+	text-transform: capitalize;
+}
+
+.button-group {
+	display: flex;
+	gap: 30px;
+}
+
+.button-group {
+  display: flex;
+  gap: 30px;
+}
+
+.btn-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 163px;
+  height: 50.408px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: opacity 0.2s ease-in;
+}
+
+.btn-header__left {
+  border-radius: 5px;
+  background: #ff7a50;
+  color: #fff;
+}
+
+.btn-header__right {
+  color: #363853;
+  text-decoration-line: underline;
+}
+
+
+.btn-header:hover {
+	opacity: 0.85;
+}
+
+.btn-header:active {
+	position: relative;
+	top: 1.5px;
+}
+
+.header-right {
+	background-image: url("./../img/header/scooter.png");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 104.77px;
+	margin-right: -59px;
+	width: 700px;
+	height: 651px;
+}
